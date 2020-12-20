@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-rabbit",
+  "version": "1.0.0",
+  "description": "Producer Consumer RabbitMQ API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "docker-compose down && docker-compose up -d && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianoOliveiraFurtado/nodejs-rabbit.git"
+  },
+  "keywords": [
+    "RabbitMQ",
+    "Node"
+  ],
+  "author": "Maximiliano de Oliveira Furtado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianoOliveiraFurtado/nodejs-rabbit/issues"
+  },
+  "homepage": "https://github.com/MaximilianoOliveiraFurtado/nodejs-rabbit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
