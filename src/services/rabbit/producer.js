@@ -1,9 +1,8 @@
 const amqp = require('amqplib')
 
 module.exports = async (message) => {
-  const queueName = `queueName`;
-  const letterRoutingKey = `dlqName`;
-  console.log(process.env.urlQueue)
+  const queueName = `queueName`
+  const letterRoutingKey = `dlqName`
   const conn = await amqp.connect(process.env.urlQueue)
   const channel = await conn.createChannel()
   await channel.assertQueue(
