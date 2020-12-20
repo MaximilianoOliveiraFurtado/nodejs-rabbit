@@ -2,10 +2,10 @@
   "name": "nodejs-rabbit",
   "version": "1.0.0",
   "description": "Producer Consumer RabbitMQ API",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "docker-compose down && docker-compose up -d && nodemon index.js"
+    "dev": "docker-compose down && docker-compose up -d && nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/MaximilianoOliveiraFurtado/nodejs-rabbit#readme",
   "dependencies": {
+    "amqplib": "^0.6.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.6"
   }
 }
