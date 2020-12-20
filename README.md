@@ -1,1 +1,1 @@
-# docker-node-postresql
+# nodejs-rabbit
