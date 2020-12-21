@@ -10,8 +10,8 @@ module.exports = async (message) => {
     {
       deadLetterExchange: '',  
       deadLetterRoutingKey: letterRoutingKey,
-    })
+    }
+  )
   await channel.assertQueue(letterRoutingKey)
-  await channel.sendToQueue(queueName, Buffer.from(JSON.stringify(message)), { persistent: true })
-  return 'Queued'
+  return await channel.sendToQueue(queueName, Buffer.from(JSON.stringify(message)), { persistent: true })
 }
